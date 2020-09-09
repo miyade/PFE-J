@@ -1,0 +1,17 @@
+package tn.esprit.Services;
+
+import java.util.List;
+
+import javax.ejb.Local;
+
+import tn.pfe.entity.Chefdepartement;
+
+@Local
+public interface servicechefdepLocal {
+	public String addchefdep(Chefdepartement cd);
+	public void affecter_A_toCD(int id_cd, int id_admin);
+	public List<Chefdepartement> affochefdeps();
+	public void deletechefdepbyid(int ido);
+	public void updatechefdep(Chefdepartement ds );
+
+}
